@@ -17,6 +17,7 @@
                             type="text"
                             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             placeholder=""
+                            value="{{ old('name', '') }}"
                         />
                         @error('email')
                             <small style="color:red;">{{ $message }}</small>
@@ -30,6 +31,7 @@
                             type="text"
                             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             placeholder=""
+                            value="{{ old('email', '') }}"
                         />
                         @error('email')
                             <small style="color:red;">{{ $message }}</small>
@@ -41,7 +43,8 @@
                             name="password"
                             id="password"
                             type="password"
-                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></input>
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        />
                         @error('password')
                             <small style="color:red;">{{ $message }}</small>
                         @enderror
@@ -52,7 +55,8 @@
                             name="password_confirmation"
                             id="password_confirmation"
                             type="password"
-                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></input>
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        />
                         @error('password_confirmation')
                             <small style="color:red;">{{ $message }}</small>
                         @enderror
